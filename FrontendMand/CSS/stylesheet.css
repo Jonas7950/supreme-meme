@@ -1,0 +1,33 @@
+body{
+}
+.Wrapper{
+    display : grid;;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+.Header{
+    grid-column: span 12;
+    background-color: red;
+}
+.Content{
+    grid-column: span 4;
+    background-color: brown;
+    padding: 5px;
+}
+.Footer{
+    background-color: red;
+    grid-column: span 12;
+}
+
+@media screen and (max-width: 680px) {
+    .Header{
+        grid-column: span 6;
+    }
+    .Menu{
+        grid-row: 1;
+        grid-column: span 6;
+    }
+    .Content{
+        grid-column: span 12;
+    }
+}
